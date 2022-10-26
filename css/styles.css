@@ -29,6 +29,11 @@ body {
   color: var(--best-color3);
   text-decoration: none;
 }
+.border {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
 
 .container {
   width: 1200px;
@@ -64,28 +69,6 @@ body {
   display: flex;
   list-style-type: none;
 }
-.nav-item .item + .item {
-  margin-left: 50px;
-}
-.icon-heder {
-  margin-right: 10px;
-  vertical-align: middle;
-  fill: #757575;
-}
-.border {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
-}
-.conts {
-  display: flex;
-  list-style-type: none;
-  margin-left: auto;
-}
-
-.conts .item + .item {
-  margin-left: 50px;
-}
 .nav-item-text {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -95,7 +78,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.nav-item .item + .item {
+  margin-left: 50px;
+}
 .nav-item-text:focus {
   color: var(--best-color1);
 }
@@ -103,7 +88,25 @@ body {
   color: var(--best-color1);
 }
 
-.mail {
+/* mail-tel*/
+
+.conts {
+  margin-left: auto;
+  display: flex;
+}
+
+.conect-items {
+  display: inline-block;
+  margin-left: 50px;
+  text-decoration: none;
+}
+.contacts-item:first-child {
+  margin-left: 0px;
+}
+
+.contacts-text {
+  margin-right: 10px;
+  fill: #757575;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -115,50 +118,46 @@ body {
   text-align: left;
   color: var(--best-color4);
 }
-.icon-heder:hover {
-  fill: #188ce8;
+
+.link-item {
+  text-decoration: none;
+  margin-right: 6px;
+  fill: #757575;
+  vertical-align: middle;
+  margin-left: 50px;
 }
-.icon-heder:focus {
-  fill: var(--best-color8);
-  fill: var(--best-color1);
+li.contacts-item {
+  list-style-type: none;
 }
-.mail:hover {
-  color: var(--best-color1);
+.contacts-item:first-child {
+  margin-left: 0px;
 }
-.mail:focus {
-  color: var(--best-color8);
+.icon-heder {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.contacts-text:hover {
+  fill: #2196f3;
   color: var(--best-color1);
 }
 
-.tel:hover {
+.contacts-text:focus {
+  fill: #2196f3;
   color: var(--best-color1);
-}
-.tel:focus {
-  color: var(--best-color8);
-  color: var(--best-color1);
-}
-.tel {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: var(--best-color4);
 }
 
 .hero-section {
-  background: #c4c4c4;
+  background-image:url(../img/team.jpg);
   max-width: 1600px;
-  background-image: url("../img/team.jpg");
+  min-height: 600px;
+
   border-top-width: 3px;
   display: block;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -411,7 +410,6 @@ body {
   border-style: none;
 }
 .portfolio-batton {
-
   border-radius: 4px;
   padding-left: 22px;
   padding-right: 22px;
@@ -426,16 +424,25 @@ body {
   text-align: center;
   color: var(--best-color3);
   cursor: pointer;
-  border:none;
+  border: none;
 }
 .portfolio-batton:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);}
-
-.img-shad:hover {
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.img-shad-top{
+  display: block;
+}
+.img-shad-top:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.img-shad-top:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .batton-portfolio .qq + .qq {
   margin-left: 8px;
 }
@@ -506,6 +513,28 @@ body {
   font: inherit;
   vertical-align: baseline;
 }
+.clients {
+}
+/* постійнй кклієнти*/
+
+.ikn {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.ikns {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
 
 .clients-link {
   cursor: pointer;
@@ -516,24 +545,16 @@ body {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
+  width: 170px;
+  height: 92px;
 }
-
+.clients-link:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
 .clients-link:hover {
-  border: 1px solid var(--best-color1);
-  fill: var(--best-color1);
-}
-.clients-lisk:focus {
-  border: 1px solid var(--best-color1);
-  fill: var(--best-color1);
-}
-.ikns {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.ikn {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 .team-socials {
