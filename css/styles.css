@@ -93,19 +93,19 @@ body {
 .conts {
   margin-left: auto;
   display: flex;
+  align-items: center;
+}
+.conts .contacts-item + .contacts-item{
+margin-left: 30px;
 }
 
 .conect-items {
   display: inline-block;
-  margin-left: 50px;
   text-decoration: none;
-}
-.contacts-item:first-child {
-  margin-left: 0px;
+  
 }
 
 .contacts-text {
-  margin-right: 10px;
   fill: #757575;
   display: flex;
   align-items: center;
@@ -119,24 +119,19 @@ body {
   color: var(--best-color4);
 }
 
-.link-item {
-  text-decoration: none;
-  margin-right: 6px;
-  fill: #757575;
-  vertical-align: middle;
-  margin-left: 50px;
-}
+
 li.contacts-item {
   list-style-type: none;
 }
-.contacts-item:first-child {
-  margin-left: 0px;
-}
+
 .icon-heder {
-  width: 16px;
+  color: #757575;
+  display: flex;
+  align-items: center;
+}
+.wewr{
   margin-right: 10px;
 }
-
 .contacts-text:hover {
   fill: #2196f3;
   color: var(--best-color1);
@@ -149,12 +144,9 @@ li.contacts-item {
 .hero-section {
 }
 .hero-section {
-background-image: linear-gradient(45deg, black, transparent),url(../img/team.jpg);
-
-
-  max-width: 1600px;
-  min-height: 600px;
-
+  background-color: #c4c4c4;
+  background: (rgba(to right 47, 48, 58, 0.4));
+  background-image:url(../img/team.jpg);
   border-top-width: 3px;
   display: block;
   text-align: center;
@@ -269,6 +261,41 @@ background-image: linear-gradient(45deg, black, transparent),url(../img/team.jpg
   color: var(--best-color3);
   text-align: center;
 }
+
+.product-thumb {
+  position: relative;
+}
+
+.product-thumb::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70px;
+  bottom: 0%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.decor-img {
+  width: 156px;
+  height: 16px;
+  display: inline-block;
+  bottom: 0%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: red;
+
+  position: absolute;
+}
+
+/* Наша команда*/
 
 .team {
   padding-top: 94px;
@@ -543,7 +570,6 @@ background-image: linear-gradient(45deg, black, transparent),url(../img/team.jpg
 
 .clients-link {
   cursor: pointer;
-  padding: 16px 32px 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -607,9 +633,9 @@ background-image: linear-gradient(45deg, black, transparent),url(../img/team.jpg
 }
 
 .adress-items {
-  flex: 0 0 25%;
+margin-right: 70px;
 }
-.conect-items p {
+.conect-items  {
   color: white;
   text-transform: uppercase;
   font-family: Roboto;
