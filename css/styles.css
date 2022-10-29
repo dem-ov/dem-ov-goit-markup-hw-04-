@@ -144,9 +144,8 @@ li.contacts-item {
 .hero-section {
 }
 .hero-section {
-  background-color: #c4c4c4;
-  background: (rgba(to right 47, 48, 58, 0.4));
-  background-image:url(../img/team.jpg);
+  background-color:#c4c4c4;
+  background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba( 47, 48, 58, 0.4)), url(../img/team.jpg);
   border-top-width: 3px;
   display: block;
   text-align: center;
